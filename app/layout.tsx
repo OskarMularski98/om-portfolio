@@ -8,7 +8,7 @@ const spaceGrotesk = Space_Grotesk({
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${spaceGrotesk.className} h-full`}>
-      <body className="min-h-full flex flex-col bg-bg-primary text-primary px-32">
+      <body className="min-h-full flex flex-col bg-bg-primary text-primary">
         {children}
       </body>
     </html>
