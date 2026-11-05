@@ -3,7 +3,7 @@ interface BaseSectionProps {
 }
 
 const BaseSection = ({ children }: BaseSectionProps) => {
-  return <div className="py-[96px]">{children}</div>;
+  return <div className="py-64">{children}</div>;
 };
 
 export default BaseSection;

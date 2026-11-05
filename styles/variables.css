@@ -12,4 +12,25 @@
     --color-secondary: #C8F169;
     --color-surface: #171A1F;
     --color-dark: #0E1013;
+    --color-border-primary: #3A414B;
+
+
+    --animate-scan: scan 1.6s ease-in-out 0.4s both;
+    --animate-reveal: reveal 1.6s ease-in-out 0.4s both;
+    --animate-brackets: brackets 0.5s ease-out 2s both;
+
+    @keyframes brackets {
+    from { opacity: 0; scale: 1.35; }
+    to   { opacity: 1; scale: 1; }
+    }
+
+    @keyframes scan {
+        0%   { top: 0%; opacity: 0; }
+        10%, 90% { opacity: 1; }
+        100% { top: 100%; opacity: 0; }
+    }
+    @keyframes reveal {
+        from { clip-path: inset(0 0 0 0); }
+        to   { clip-path: inset(100% 0 0 0); }
+    }
 }

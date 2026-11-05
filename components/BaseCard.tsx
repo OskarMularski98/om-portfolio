@@ -13,12 +13,17 @@ const BaseCard = ({
     NonNullable<BaseCardProps["variant"]>,
     string
   > = {
-    primary: "bg-border border border-border rounded-2xl text-muted-text",
+    primary:
+      "bg-bg-image-placeholder-color border border-border rounded-2xl text-muted-text",
     secondary: "bg-secondary rounded-2xl text-dark",
-    muted: "bg-surface text-primary rounded-2xl",
+    muted: "bg-surface border border-border-primary text-primary rounded-2xl",
   };
   return (
-    <div className={[`${variantClasses[variant]} ${className}`].join(" ")}>
+    <div
+      className={[
+        `${variantClasses[variant]} ${className} flex items-center justify-center`,
+      ].join(" ")}
+    >
       {children}
     </div>
   );
