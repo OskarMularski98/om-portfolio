@@ -12,3 +12,17 @@ export const Default = meta.story({
     children: "Click me",
   },
 });
+
+export const Secondary = meta.story({
+  args: {
+    children: "Secondary",
+    variant: "secondary",
+  },
+});
+
+export const GhostMuted = meta.story({
+  args: {
+    children: "Muted",
+    variant: "ghostMuted",
+  },
+});
